@@ -261,15 +261,14 @@ input.food::placeholder {
 
 .foodsection {
   display: grid;
-  grid-template-columns: repeat(25vh, 3);
+  grid-template-columns: auto auto auto;
+  gap:30px;
   margin: 0 auto;
   width: 100%;
   width: 70em;
 }
 
 .food-cart-box {
-  grid-column: 1;
-
   max-width: 280px;
 
   display: flex;
@@ -292,6 +291,7 @@ input.food::placeholder {
   position: relative;
   width: 100%;
   border-radius: 0.5em;
+  
 }
 
 .promoted {
