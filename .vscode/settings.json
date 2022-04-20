@@ -1,5 +1,7 @@
 {
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.tabs.title": "${process} ${cwd}"
+  "terminal.integrated.tabs.title": "${process} ${cwd}",
+  "prettier.singleQuote": false,
+  "javascript.preferences.quoteStyle": "auto"
 }
