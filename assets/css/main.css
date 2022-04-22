@@ -1,10 +1,10 @@
 @font-face {
   font-family: Okra;
   font-display: swap;
-  src: url(https://b.zmtcdn.com/web_assets/bac203052382824f8c8fcd7668417f771597997180.woff2)
-      format('woff2'),
-    url(https://b.zmtcdn.com/web_assets/9dd3d8fd6150ab3f8106f4a073d054521597921546.ttf)
-      format('truetype');
+  src: url(https://b.zmtcdn.com/web_assets/081152f7adf53200c7f8789005ca54ca1597997115.woff2)
+      format("woff2"),
+    url(https://b.zmtcdn.com/web_assets/6651f01000a2e122e587bb2282cb3ea21597921594.ttf)
+      format("truetype");
   font-style: normal;
   font-weight: 300;
 }
@@ -23,7 +23,7 @@ header {
   max-width: 100%;
   display: block;
   position: static;
-  height: 7.2rem;
+  /* height: 7.2rem; */
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
@@ -50,6 +50,10 @@ header {
   position: relative;
   z-index: 4;
   gap: 30px;
+}
+
+.header-s-1{
+  display: none;
 }
 div.logo {
   display: flex;
@@ -275,22 +279,32 @@ input.food::placeholder {
   flex-direction: column;
   gap: 5px;
 
-  border: 1px solid silver;
+  border: 1px solid transparent;
   border-radius: 1em;
   padding: 0.4em;
 }
+
+.food-cart-box:hover{
+  border: 1px solid silver;
+  box-shadow: outset 0 0 3px 6px rgb(218, 218, 218);
+  transform: scale(1.2);
+}
+
 
 .img-cont {
   align-self: center;
   position: relative;
   width: 100%;
+  height: 200px;
   display: flex;
 }
 
 .img-cont img {
   position: relative;
   width: 100%;
+  height: 100%;
   border-radius: 0.5em;
+  object-fit: cover;
   
 }
 
@@ -333,6 +347,27 @@ input.food::placeholder {
   align-items: center;
 }
 
+.rname{
+  font-weight: 700;
+  font-size: 16px;
+  
+}
+
+.det{
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price{
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
 .rating {
   display: flex;
 
@@ -373,4 +408,64 @@ input.food::placeholder {
 .footnote div.grey-text {
   font-size: 10px;
   font-stretch: condensed;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+
+@media screen and (max-width: 400px){
+
+  
+  .header1{
+    display:none;
+  }
+  .logo{
+    display:none;
+  }
+  .header-s-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+  .user-small{
+    width: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sitemap{
+    display: none;
+  }
+
+  .outer-mode-outer{
+    width: 100%;
+  }
+
+  .section-outer{
+    
+    overflow-y: scroll;
+  }
+
+
+  .citylocation{
+    display: none;
+  }
+.user{
+  display: none;
+}
+
+.foodsection{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+  /* align-items: center; */
+}
+
 }

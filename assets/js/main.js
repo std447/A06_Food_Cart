@@ -78,6 +78,8 @@ for (let item = 0;item < itemList.length;item++) {
 
 }
 
+
+
 // for (let i = 0; i < itemlist.length; i++) {
 //   const { src, offer, dtime, rname, rating, details, price } = itemlist[i];
 
@@ -114,48 +116,3 @@ for (let item = 0;item < itemList.length;item++) {
 
 //   foodCart.appendChild(carddiv);
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const itemlist = [
-//   {
-//     id: 1,
-//     rname: 'One Way Restaurant',
-//     rating: '3.9',
-//     details: 'Sev Tamatar Sabji',
-//     price: 'Rs. 100 for 2',
-//     offer: '50% off',
-//     dtime: '39 min',
-//     src: '01',
-//   },
-//   {
-//     id: 2,
-//     rname: 'One Way Restaurant',
-//     rating: '3.9',
-//     details: 'Sev Tamatar Sabji',
-//     price: 'Rs. 100 for 2',
-//     offer: '50% off',
-//     dtime: '39 min',
-//     src: '02',
-//   },
-// ];
