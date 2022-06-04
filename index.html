@@ -14,215 +14,218 @@
     <main>
       <!-- header starts here -->
       <header>
-        <div class="header1">
+        <div class="header-inner">
+          <div class="header1">
           
-          <div class="logo">
-            <img src=".\assets\images\icon-zomato.avif" alt="" id="zomato" />
-          </div>
+            <div class="logo">
+              <img src=".\assets\images\icon-zomato.avif" alt="" id="zomato" />
+            </div>
+              
             
-          
-          <div class="box2">
-            <div id="search-box">
-              <div class="city-location">
-                <div class="location icon">
-                  <i color="#FF7E8B" size="20">
-                    <svg
-                      fill="#FF7E8B"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      class="icon-location"
+            <div class="box2">
+              <div id="search-box">
+                <div class="city-location">
+                  <div class="location icon">
+                    <i color="#FF7E8B" size="20">
+                      <svg
+                        fill="#FF7E8B"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        class="icon-location"
+                      >
+                        <title>location-fill</title>
+                        <path
+                          d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z"
+                        ></path>
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="search-loc">
+                    <input type="text" name="city" class="no-outline loc" />
+                  </div>
+                  <div class="icon">
+                    <i
+                      class="sc-rbbb40-1 iFnyeo sc-jgVwMx MCQDu"
+                      color="#4F4F4F"
+                      size="12"
                     >
-                      <title>location-fill</title>
-                      <path
-                        d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z"
-                      ></path>
-                    </svg>
-                  </i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="#4F4F4F"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 20 20"
+                        aria-labelledby="icon-svg-title- icon-svg-desc-"
+                        role="img"
+                        class="sc-rbbb40-0 ezrcri"
+                      >
+                        <title>down-triangle</title>
+                        <path d="M20 5.42l-10 10-10-10h20z"></path>
+                      </svg>
+                    </i>
+                  </div>
                 </div>
-                <div class="search-loc">
-                  <input type="text" name="city" class="no-outline loc" />
-                </div>
-                <div class="icon">
-                  <i
-                    class="sc-rbbb40-1 iFnyeo sc-jgVwMx MCQDu"
-                    color="#4F4F4F"
-                    size="12"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="#4F4F4F"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 20 20"
-                      aria-labelledby="icon-svg-title- icon-svg-desc-"
-                      role="img"
-                      class="sc-rbbb40-0 ezrcri"
-                    >
-                      <title>down-triangle</title>
-                      <path d="M20 5.42l-10 10-10-10h20z"></path>
-                    </svg>
-                  </i>
-                </div>
-              </div>
-
-              <div class="divider"></div>
-
-              <div class="food-item">
-                <div class="search-logo">
-                  <i class="search" color="#828282" size="18">
-                    <svg
-                      fill="#828282"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 20 20"
-                      class="search-icon"
-                    >
-                      <path
-                        d="M19.78 19.12l-3.88-3.9c1.28-1.6 2.080-3.6 2.080-5.8 0-5-3.98-9-8.98-9s-9 4-9 9c0 5 4 9 9 9 2.2 0 4.2-0.8 5.8-2.1l3.88 3.9c0.1 0.1 0.3 0.2 0.5 0.2s0.4-0.1 0.5-0.2c0.4-0.3 0.4-0.8 0.1-1.1zM1.5 9.42c0-4.1 3.4-7.5 7.5-7.5s7.48 3.4 7.48 7.5-3.38 7.5-7.48 7.5c-4.1 0-7.5-3.4-7.5-7.5z"
-                      ></path>
-                    </svg>
-                  </i>
-                </div>
-                <div class="food-searching">
-                  <input
-                    type="text"
-                    name="food"
-                    class="no-outline food"
-                    placeholder="Search for restaurant, cusine or a dish"
-                  />
+  
+                <div class="divider"></div>
+  
+                <div class="food-item">
+                  <div class="search-logo">
+                    <i class="search" color="#828282" size="18">
+                      <svg
+                        fill="#828282"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 20 20"
+                        class="search-icon"
+                      >
+                        <path
+                          d="M19.78 19.12l-3.88-3.9c1.28-1.6 2.080-3.6 2.080-5.8 0-5-3.98-9-8.98-9s-9 4-9 9c0 5 4 9 9 9 2.2 0 4.2-0.8 5.8-2.1l3.88 3.9c0.1 0.1 0.3 0.2 0.5 0.2s0.4-0.1 0.5-0.2c0.4-0.3 0.4-0.8 0.1-1.1zM1.5 9.42c0-4.1 3.4-7.5 7.5-7.5s7.48 3.4 7.48 7.5-3.38 7.5-7.48 7.5c-4.1 0-7.5-3.4-7.5-7.5z"
+                        ></path>
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="food-searching">
+                    <input
+                      type="text"
+                      name="food"
+                      class="no-outline food"
+                      placeholder="Search for restaurant, cusine or a dish"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="user">Log in</div>
-            <div class="user">Sign up</div>
-          </div>
-        </div>
-
-        <div class="header-s-1">
-          <div class="logo">
-            <img src=".\assets\images\icon-zomato.avif" alt="" id="zomato" />
-          </div>
-          <div class="user-small">
-            <i color="#EF4F5F" size="18">
-              <svg fill="#EF4F5F" width="18" height="18" viewBox="0 0 20 20">
-                <circle cx="10" cy="4.5" r="4.5"></circle>
-                <path
-                  d="M18.18,14.73c-2.35-4.6-6.49-4.48-8.15-4.48s-5.86-.12-8.21,4.48C.59,17.14,1.29,20,4.54,20H15.46C18.71,20,19.41,17.14,18.18,14.73Z"
-                ></path>
-              </svg>
-            </i>
-          </div>
-        </div>
-
-        <div class="sitemap">
-          <p class="grey-text">
-            Home / India / Indore /&nbsp;
-            <span class="light-grey">Sev Tamater Restaurents</span>
-          </p>
-        </div>
   
-        <div class="order-mode-outer">
-          <div class="section-outer">
-            <div class="cont01 restaurent">
-              <div class="icon-box">
-                <img
-                  src=".\assets\images\icon-delivery.avif"
-                  alt="illustration"
-                  class="icon-order"
-                />
-              </div>
-  
-              <div class="order-text">Delivery</div>
-            </div>
-  
-            <div class="cont01 dining">
-              <div class="icon-box">
-                <img
-                  src=".\assets\images\icon-dining.avif"
-                  alt="illustration"
-                  class="icon-order"
-                />
-              </div>
-  
-              <div class="order-text">Dining Out</div>
-            </div>
-  
-            <div class="cont01 nightlife">
-              <div class="icon-box">
-                <img
-                  src=".\assets\images\icon-nightlife.webp"
-                  alt="illustration"
-                  class="icon-order"
-                />
-              </div>
-              <div class="order-text">Nightlife</div>
+              <div class="user">Log in</div>
+              <div class="user">Sign up</div>
             </div>
           </div>
-        </div>
   
-        <div class="filter-outer">
-          <div class="filter-section">
-            <div class="filter-option">
-              <div class="f-count">1</div>
-              <div class="grey-text">Filters</div>
+          <div class="header-s-1">
+            <div class="logo">
+              <img src=".\assets\images\icon-zomato.avif" alt="" id="zomato" />
             </div>
-  
-            <div class="filter-option">
-              <div class="grey-text">Sev Tamatar</div>
-            </div>
-  
-            <div class="filter-option">
-              <div class="arrow-symbol" size="18" color="#9C9C9C">
-                <svg
-                  fill="#9C9C9C"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 20 20"
-                  aria-labelledby="icon-svg-title- icon-svg-desc-"
-                  role="img"
-                  class="sc-rbbb40-0 iwHbVQ"
-                >
+            <div class="user-small">
+              <i color="#EF4F5F" size="18">
+                <svg fill="#EF4F5F" width="18" height="18" viewBox="0 0 20 20">
+                  <circle cx="10" cy="4.5" r="4.5"></circle>
                   <path
-                    d="M9.9,14.8l-2.3,2.3V9c0-0.5-0.4-0.8-0.8-0.8S5.9,8.5,5.9,9v8.2l-2.3-2.3c0,0,0,0,0,0c-0.3-0.3-0.9-0.3-1.2,0 c-0.3,0.3-0.3,0.8,0,1.2l3.7,3.7c0.3,0.3,0.8,0.3,1.2,0l3.7-3.7c0.2-0.2,0.2-0.4,0.2-0.6c0-0.2-0.1-0.4-0.2-0.6 C10.8,14.5,10.3,14.5,9.9,14.8z"
-                  ></path>
-                  <path
-                    d="M17.6,4l-3.7-3.7c-0.3-0.3-0.8-0.3-1.2,0L8.9,4C8.7,4.1,8.6,4.4,8.7,4.6c0,0.2,0.1,0.4,0.2,0.6c0.3,0.3,0.8,0.3,1.2,0 l2.3-2.3V11c0,0.5,0.4,0.8,0.8,0.8c0.5,0,0.8-0.4,0.8-0.8V2.9l2.3,2.3c0,0,0,0,0,0c0.3,0.3,0.9,0.3,1.2,0C17.9,4.8,17.9,4.3,17.6,4 z"
+                    d="M18.18,14.73c-2.35-4.6-6.49-4.48-8.15-4.48s-5.86-.12-8.21,4.48C.59,17.14,1.29,20,4.54,20H15.46C18.71,20,19.41,17.14,18.18,14.73Z"
                   ></path>
                 </svg>
-              </div>
-  
-              <div class="grey-text">Delivery Time</div>
-            </div>
-  
-            <div class="filter-option">
-              <div class="grey-text">Rating 4.0+</div>
-            </div>
-  
-            <div class="filter-option">
-              <div class="grey-text">Pure Veg</div>
-            </div>
-  
-            <div class="filter-option">
-              <select name="Cusines" class="grey-text no-outline">
-                <option value="v1" select>Cusines</option>
-              </select>
-            </div>
-            <div class="filter-option">
-              <select name="Cusines" class="grey-text no-outline">
-                <option value="v1" select>More Options</option>
-              </select>
+              </i>
             </div>
           </div>
+  
+          <div class="sitemap">
+            <p class="grey-text">
+              Home / India / Indore /&nbsp;
+              <span class="light-grey">Sev Tamater Restaurents</span>
+            </p>
+          </div>
+    
+          <div class="order-mode-outer">
+            <div class="section-outer">
+              <div class="cont01 restaurent">
+                <div class="icon-box">
+                  <img
+                    src=".\assets\images\icon-delivery.avif"
+                    alt="illustration"
+                    class="icon-order"
+                  />
+                </div>
+    
+                <div class="order-text">Delivery</div>
+              </div>
+    
+              <div class="cont01 dining">
+                <div class="icon-box">
+                  <img
+                    src=".\assets\images\icon-dining.avif"
+                    alt="illustration"
+                    class="icon-order"
+                  />
+                </div>
+    
+                <div class="order-text">Dining Out</div>
+              </div>
+    
+              <div class="cont01 nightlife">
+                <div class="icon-box">
+                  <img
+                    src=".\assets\images\icon-nightlife.webp"
+                    alt="illustration"
+                    class="icon-order"
+                  />
+                </div>
+                <div class="order-text">Nightlife</div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="filter-outer">
+            <div class="filter-section">
+              <div class="filter-option">
+                <div class="f-count">1</div>
+                <div class="grey-text">Filters</div>
+              </div>
+    
+              <div class="filter-option">
+                <div class="grey-text">Sev Tamatar</div>
+              </div>
+    
+              <div class="filter-option">
+                <div class="arrow-symbol" size="18" color="#9C9C9C">
+                  <svg
+                    fill="#9C9C9C"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 20 20"
+                    aria-labelledby="icon-svg-title- icon-svg-desc-"
+                    role="img"
+                    class="sc-rbbb40-0 iwHbVQ"
+                  >
+                    <path
+                      d="M9.9,14.8l-2.3,2.3V9c0-0.5-0.4-0.8-0.8-0.8S5.9,8.5,5.9,9v8.2l-2.3-2.3c0,0,0,0,0,0c-0.3-0.3-0.9-0.3-1.2,0 c-0.3,0.3-0.3,0.8,0,1.2l3.7,3.7c0.3,0.3,0.8,0.3,1.2,0l3.7-3.7c0.2-0.2,0.2-0.4,0.2-0.6c0-0.2-0.1-0.4-0.2-0.6 C10.8,14.5,10.3,14.5,9.9,14.8z"
+                    ></path>
+                    <path
+                      d="M17.6,4l-3.7-3.7c-0.3-0.3-0.8-0.3-1.2,0L8.9,4C8.7,4.1,8.6,4.4,8.7,4.6c0,0.2,0.1,0.4,0.2,0.6c0.3,0.3,0.8,0.3,1.2,0 l2.3-2.3V11c0,0.5,0.4,0.8,0.8,0.8c0.5,0,0.8-0.4,0.8-0.8V2.9l2.3,2.3c0,0,0,0,0,0c0.3,0.3,0.9,0.3,1.2,0C17.9,4.8,17.9,4.3,17.6,4 z"
+                    ></path>
+                  </svg>
+                </div>
+    
+                <div class="grey-text">Delivery Time</div>
+              </div>
+    
+              <div class="filter-option">
+                <div class="grey-text">Rating 4.0+</div>
+              </div>
+    
+              <div class="filter-option">
+                <div class="grey-text">Pure Veg</div>
+              </div>
+    
+              <div class="filter-option">
+                <select name="Cusines" class="grey-text no-outline">
+                  <option value="v1" select>Cusines</option>
+                </select>
+              </div>
+              <div class="filter-option">
+                <select name="Cusines" class="grey-text no-outline">
+                  <option value="v1" select>More Options</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-h1">
+          <h1>Delivery Restaurents in Indore</h1>
         </div>
       </header>
 
 
 
-      <div class="header-h1">
-        <h1>Delivery Restaurents in Indore</h1>
-      </div>
+      
 
       <!-- header ends here -->
       

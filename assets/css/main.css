@@ -14,21 +14,25 @@
 }
 main {
   width: 100%;
-  height: 500vh;
-  /*    font-family: Okra, Helvetica, 'Segoe UI'; */
-}
+  color:#111;
+  }
 
-header {
+  header{
+    background: white;
+  }
+
+.header-inner {
   width: 100%;
   max-width: 100%;
-  display: block;
-  position: static;
+  
   /* height: 7.2rem; */
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
   top: 0px;
+  background-color: white;
+  z-index: 5;
 }
 
 #zomato {
@@ -74,7 +78,7 @@ div.logo {
 
 #search-box {
   position: relative;
-  left: -7em;
+  
   display: flex;
   justify-content: center;
   width: 65%;
@@ -188,15 +192,15 @@ input.food::placeholder {
 }
 
 .icon-order {
-  height: 2em;
+  height: 1.8em;
 }
 
 .icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4em;
-  width: 4em;
+  height: 3em;
+  width: 3em;
   background-color: rgb(248, 248, 248);
   border-radius: 3em;
 }
@@ -237,10 +241,15 @@ input.food::placeholder {
   display: flex;
   padding: 5px 10px;
   border: 1px solid silver;
+  
   height: 1.5em;
   border-radius: 8px;
   align-items: center;
   gap: 4px;
+  min-width: fit-content;
+}
+.filter-option select{
+  width: fit-content;
 }
 
 .f-count {
@@ -257,6 +266,8 @@ input.food::placeholder {
   max-width: 70em;
   width: 100%;
   margin: 0 auto;
+  z-index: 5;
+  background-color: white;
 }
 
 .header-h1 h1 {
@@ -264,30 +275,37 @@ input.food::placeholder {
 }
 
 .foodsection {
+  --auto-grid-min-size: 20rem;
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap:30px;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  /* grid-gap: 1rem; */
   margin: 0 auto;
-  width: 100%;
-  width: 70em;
+  max-width: 70em;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:30px;
+  
+   */
 }
 
 .food-cart-box {
-  max-width: 280px;
+  
 
   display: flex;
   flex-direction: column;
   gap: 5px;
-
+  max-width: 260px;
+  
   border: 1px solid transparent;
   border-radius: 1em;
   padding: 0.4em;
+  box-sizing: border-box;
 }
 
 .food-cart-box:hover{
   border: 1px solid silver;
   box-shadow: outset 0 0 3px 6px rgb(218, 218, 218);
   transform: scale(1.2);
+  z-index: -1;
 }
 
 
@@ -297,6 +315,7 @@ input.food::placeholder {
   width: 100%;
   height: 200px;
   display: flex;
+  box-sizing: border-box;
 }
 
 .img-cont img {
@@ -400,8 +419,8 @@ input.food::placeholder {
   display: flex;
   gap: 8px;
 }
-#max-safety,
-#img-graph {
+.max-safety,
+.img-graph {
   height: 1.3em;
 }
 
@@ -443,15 +462,31 @@ input.food::placeholder {
     display: none;
   }
 
-  .outer-mode-outer{
+  .order-mode-outer{
     width: 100%;
   }
 
   .section-outer{
-    
+    max-width:100%;
+    white-space: nowrap;
     overflow-y: scroll;
+    font-size: 14px;
+    
+  }
+  .filter-outer{
+    max-width:100%;
+    white-space: nowrap;
+    overflow-y: scroll;
+    padding: 5px 0;
+    height: 100%;
+    font-size: 12px;
   }
 
+
+  .section-outer::-webkit-scrollbar,
+  .filter-outer::-webkit-scrollbar { 
+    display: none; 
+}
 
   .citylocation{
     display: none;
@@ -465,7 +500,105 @@ input.food::placeholder {
   flex-direction: column;
   gap: 10px;
   max-width: 100%;
-  /* align-items: center; */
+  align-items: center;
+}
+
+.header-h1 h1{
+  font-size: large;
+  margin: 0 0 10px 0 ;
+}
+
+.food-cart-box{
+  border: 1px solid silver;
+}
+
+.food-cart-box:hover{
+  transform: none;
+
 }
 
 }
+
+
+/* @media screen and (min-width:401px) and (max-width: 768px){
+
+  .header1{
+    display:none;
+  }
+  .logo{
+    display:none;
+  }
+  .header-s-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 1em;
+  }
+  .user-small{
+    width: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .outer-mode-outer{
+    width: 100%;
+  }
+
+  .section-outer{
+    max-width:100%;
+    white-space: nowrap;
+    overflow-y: scroll;
+    font-size: 16px;
+    
+  }
+  .filter-outer{
+    max-width:100%;
+    white-space: nowrap;
+    overflow-y: scroll;
+    padding: 15px 0;
+    height: 100%;
+    font-size: 14px;
+  }
+
+
+  .section-outer::-webkit-scrollbar,
+  .filter-outer::-webkit-scrollbar { 
+    display: none; 
+}
+
+  .citylocation{
+    display: none;
+  }
+.user{
+  display: none;
+}
+
+/* .foodsection{
+  /* display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  max-width: 100%;
+  align-items: center; 
+} 
+
+.header-h1 h1{
+  font-size: large;
+  margin: 0 0 10px 0 ;
+}
+
+.food-cart-box{
+  border: 1px solid silver;
+}
+
+.food-cart-box:hover{
+  transform: none;
+
+}
+
+} */

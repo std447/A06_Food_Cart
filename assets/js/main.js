@@ -27,11 +27,12 @@ for (let item = 0;item < itemList.length;item++) {
 
     //rating generates random number between 3.0 and 5.0
     let rating = ((Math.floor((Math.random()*20) + 30))/10).toFixed(1);
-    
-  
-    
-  
 
+    let src = `../images/fooditems/food${(item<9)? '0'+(item+1):(item+1) }.avif`
+    let src1 = `"https://raw.githubusercontent.com/std447/A06_Food_Cart/foodsection/assets/images/fooditems/food${(item<9)? '0'+(item+1):(item+1) }.avif"`;
+  
+    
+  
   const cardBox = document.createElement("div");
   cardBox.className = "food-cart-box"
 
@@ -44,7 +45,7 @@ for (let item = 0;item < itemList.length;item++) {
 
   cardBox.innerHTML=`
     <div class="img-cont" >
-      <img src="https://raw.githubusercontent.com/std447/A06_Food_Cart/foodsection/assets/images/fooditems/food${(item<9)? '0'+(item+1):(item+1) }.avif" />
+      <img src= ${src1} />
       <div class="promoted">Promoted</div>
       <div class="offer-percent">${offer}% Off</div>
       <div class="delivery-time">${dtime} min</div>
@@ -65,11 +66,11 @@ for (let item = 0;item < itemList.length;item++) {
     <div class="hr"><hr /></div>
 
     <div class="footnote">
-       <img src="https://raw.githubusercontent.com/std447/A06_Food_Cart/foodsection/assets/images/max-safety.png" id="max-safety" />
+       <img src="https://raw.githubusercontent.com/std447/A06_Food_Cart/foodsection/assets/images/max-safety.png" class="max-safety" />
        <div class="grey-text">
          Follows all Max Safety measures to ensure your food is safe
        </div>
-       <img src="https://raw.githubusercontent.com/std447/A06_Food_Cart/foodsection/assets/images/icon-increase.png" id="img-graph" />
+       <img src="https://raw.githubusercontent.com/std447/A06_Food_Cart/foodsection/assets/images/icon-increase.png" class="img-graph" />
      </div>`;
 
   
