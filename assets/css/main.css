@@ -14,17 +14,17 @@
 }
 main {
   width: 100%;
-  color:#111;
-  }
+  color: #111;
+}
 
-  header{
-    background: white;
-  }
+header {
+  background: white;
+}
 
 .header-inner {
   width: 100%;
   max-width: 100%;
-  
+
   /* height: 7.2rem; */
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -56,7 +56,7 @@ main {
   gap: 30px;
 }
 
-.header-s-1{
+.header-s-1 {
   display: none;
 }
 div.logo {
@@ -78,7 +78,7 @@ div.logo {
 
 #search-box {
   position: relative;
-  
+
   display: flex;
   justify-content: center;
   width: 65%;
@@ -241,14 +241,14 @@ input.food::placeholder {
   display: flex;
   padding: 5px 10px;
   border: 1px solid silver;
-  
+
   height: 1.5em;
   border-radius: 8px;
   align-items: center;
   gap: 4px;
   min-width: fit-content;
 }
-.filter-option select{
+.filter-option select {
   width: fit-content;
 }
 
@@ -277,7 +277,10 @@ input.food::placeholder {
 .foodsection {
   --auto-grid-min-size: 20rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
   /* grid-gap: 1rem; */
   margin: 0 auto;
   max-width: 70em;
@@ -288,26 +291,23 @@ input.food::placeholder {
 }
 
 .food-cart-box {
-  
-
   display: flex;
   flex-direction: column;
   gap: 5px;
   max-width: 260px;
-  
+
   border: 1px solid transparent;
   border-radius: 1em;
   padding: 0.4em;
   box-sizing: border-box;
 }
 
-.food-cart-box:hover{
+.food-cart-box:hover {
   border: 1px solid silver;
   box-shadow: outset 0 0 3px 6px rgb(218, 218, 218);
   transform: scale(1.2);
   z-index: -1;
 }
-
 
 .img-cont {
   align-self: center;
@@ -324,7 +324,6 @@ input.food::placeholder {
   height: 100%;
   border-radius: 0.5em;
   object-fit: cover;
-  
 }
 
 .promoted {
@@ -366,25 +365,23 @@ input.food::placeholder {
   align-items: center;
 }
 
-.rname{
+.rname {
   font-weight: 700;
   font-size: 16px;
-  
 }
 
-.det{
+.det {
   font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.price{
+.price {
   font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
 }
 
 .rating {
@@ -430,26 +427,22 @@ input.food::placeholder {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
 }
 
-
-@media screen and (max-width: 400px){
-
-  
-  .header1{
-    display:none;
+@media screen and (max-width: 400px) {
+  .header1 {
+    display: none;
   }
-  .logo{
-    display:none;
+  .logo {
+    display: none;
   }
-  .header-s-1{
+  .header-s-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
   }
-  .user-small{
+  .user-small {
     width: 30px;
     height: 30px;
     border: 1px solid grey;
@@ -458,23 +451,22 @@ input.food::placeholder {
     align-items: center;
     justify-content: center;
   }
-  .sitemap{
+  .sitemap {
     display: none;
   }
 
-  .order-mode-outer{
+  .order-mode-outer {
     width: 100%;
   }
 
-  .section-outer{
-    max-width:100%;
+  .section-outer {
+    max-width: 100%;
     white-space: nowrap;
     overflow-y: scroll;
     font-size: 14px;
-    
   }
-  .filter-outer{
-    max-width:100%;
+  .filter-outer {
+    max-width: 100%;
     white-space: nowrap;
     overflow-y: scroll;
     padding: 5px 0;
@@ -482,43 +474,39 @@ input.food::placeholder {
     font-size: 12px;
   }
 
-
   .section-outer::-webkit-scrollbar,
-  .filter-outer::-webkit-scrollbar { 
-    display: none; 
-}
-
-  .citylocation{
+  .filter-outer::-webkit-scrollbar {
     display: none;
   }
-.user{
-  display: none;
+
+  .citylocation {
+    display: none;
+  }
+  .user {
+    display: none;
+  }
+
+  .foodsection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .header-h1 h1 {
+    font-size: large;
+    margin: 0 0 10px 0;
+  }
+
+  .food-cart-box {
+    border: 1px solid silver;
+  }
+
+  .food-cart-box:hover {
+    transform: none;
+  }
 }
-
-.foodsection{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 100%;
-  align-items: center;
-}
-
-.header-h1 h1{
-  font-size: large;
-  margin: 0 0 10px 0 ;
-}
-
-.food-cart-box{
-  border: 1px solid silver;
-}
-
-.food-cart-box:hover{
-  transform: none;
-
-}
-
-}
-
 
 /* @media screen and (min-width:401px) and (max-width: 768px){
 
